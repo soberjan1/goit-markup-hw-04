@@ -174,8 +174,23 @@ body {
   background-color: var(--secondary-color);
   padding-top: 188px;
   padding-bottom: 188px;
-  /* width: 1440px;
-  height: 600px; */
+}
+
+.hero-background {
+  max-width: 1440px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/people-office-hero.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -222,7 +237,7 @@ body {
 
 /* ============= ПРЕИМУЩЕСТВА =============*/
 
-.benefits { 
+.benefits {
   padding-bottom: 0;
 }
 

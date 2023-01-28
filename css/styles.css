@@ -62,6 +62,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
+
+  color: var(--secondary-color);
 }
 
 .section-subtitle {
@@ -330,6 +332,33 @@ body {
 
 /* ============= /КОМАНДА =============*/
 
+/* ============= КЛИЕНТЫ =============*/
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  fill: #8e8f99;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  fill: #404bbf;
+  border: 1px solid#404BBF;
+}
+/* ============= /КЛИЕНТЫ =============*/
+
 /* ============= ФУТУЕР =============*/
 
 .footer {
@@ -357,6 +386,56 @@ body {
   letter-spacing: 0.02em;
   color: #e7e9fc;
 }
+
+.footer-social-description {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.footer-main-div {
+  display: flex;
+}
+
+.footer-right-div {
+  margin-left: 120px;
+}
+
+.footer-social-description {
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-social-list-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: #31d0aa;
+}
+
 /* ============= /ФУТУЕР =============*/
 
 /* ========== СТИЛИ ДЛЯ ПОРТФОЛИО ========== */
@@ -389,6 +468,8 @@ body {
 .menu-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .menu-portfolio {
@@ -403,6 +484,10 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
+.card-portfolio {
+  display: block;
+}
+
 .portfolio {
   padding-top: 96px;
 }
@@ -413,6 +498,17 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+}
+
+.menu-portfolio .card-portfolio:hover,
+.menu-portfolio .card-portfolio:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.menu-portfolio .card-portfolio:hover .portfolio-card-content-wrapper,
+.menu-portfolio .card-portfolio:focus .portfolio-card-content-wrapper {
+  border: 0.5px solid #f4f4fd;
 }
 
 /* ============= /DIV-MENU =============== */
